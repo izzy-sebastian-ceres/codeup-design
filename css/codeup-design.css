@@ -1,5 +1,5 @@
 body {
-    margin: 0 auto;
+    margin: 1em auto;
     background-color: #f0f0f0;
     font-family: 'Abel', sans-serif;
     text-align: center;
@@ -51,13 +51,10 @@ h3{
     font-family: 'Anton', sans-serif;
     font-size:40px;
 }
-header{
-    grid-area: header;
 
-}
 .circle{
     font-family: 'Anton', sans-serif;
-    border: solid .5em black;
+    border: solid .5em white;
     display: inline-block;
     border-radius: 50%;
     width: 105px;
@@ -69,32 +66,54 @@ header{
 
 
 }
-.imgs1{
+.red{
     background: #e6563b;
 }
-.imgs2{
+.orange{
     background-color: #eb9d3a;
 }
-.imgs3{
+.green{
     background-color: #73b06c;
 }
-.imgs4{
+.blue{
     background-color: #00aba9;
 }
 .imgs{
-    grid-area: imgs;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
 }
-.pic1{
-    font-size: 20px;
-    grid-area: pic1;
+.pic-text{
+    font-size: 30px;
+
 }
 .pic-size{
     width: 80%;
     height: auto;
     border: .4em solid #e6e6e6;
     border-radius: 10px;
+}
+
+.pic-footer{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    margin-bottom: 5em;
+
+}
+.margin-right{
+
+    margin-right: auto;
+}
+
+.sm-btn{
+
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    font-size: 1em;
+
 }
