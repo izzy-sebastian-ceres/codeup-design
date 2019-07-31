@@ -1,0 +1,51 @@
+body {
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-rows: 20em 20em 20em 20em 20em 20em 20em 20em 20em 20em 20em;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "nav nav"
+    "header header"
+    "imgs imgs"
+    "pic1 pic1"
+    "picfoot1 picfoot2"
+    "pic2 pic2"
+    "picfoot3 picfoot4"
+    "pic3 pic3"
+    "picfoot5 picfoot6"
+    "pic4 pic4"
+    "picfoot7 picfoot8";
+
+    background-color: lightgray;
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+}
+
+.logo{
+    height: 62px;
+    width: 100%;
+    background-color: white;
+    margin-top: 3em;
+}
+
+.logo-center{
+    position: absolute;
+    left: calc(50% + (-52.5px));
+    top: 26px;
+}
+
+nav{
+    grid-area: nav;
+
+}
+
+.nav-links li{
+    list-style-type: none;
+    display: inline-block;
+
+}
+.big-title{
+    font-size: 48px;
+    margin: 30px 0;
+}
