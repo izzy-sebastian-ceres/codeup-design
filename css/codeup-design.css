@@ -99,13 +99,13 @@ h3{
     font-size: 18px;
 
 }
+
 .pic-size{
     width: 80%;
     height: auto;
     border: .4em solid #e6e6e6;
     border-radius: 10px;
 }
-
 .pic-footer{
     width: 80%;
     display: flex;
@@ -125,6 +125,7 @@ h3{
     width: 18px;
     border-radius: 50%;
     font-size: 1em;
+    line-height: 18px;
 
 }
 
@@ -154,4 +155,43 @@ h3{
 
 
     }
+}
+
+@media screen and (min-width: 377px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:50px 20% 20%;
+        grid-template-areas:
+        "select select"
+        "pic1 pic2"
+        "pic3 pic4";
+    }
+
+    .select{
+        grid-area: select;
+    }
+
+    .pic1{
+          grid-area: pic1;
+    }
+
+    .pic2{
+        grid-area: pic2;
+    }
+
+    .pic3{
+        grid-area: pic3;
+    }
+
+    .pic4{
+        grid-area: pic4;
+    }
+    .pic-size {
+        max-height:218px ;
+        width: auto;
+    }
+
+
+
 }
