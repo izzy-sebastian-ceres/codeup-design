@@ -52,6 +52,16 @@ h3{
     font-size:40px;
 }
 
+.last-text{
+    font-family: 'Anton', sans-serif;
+    font-size:32px;
+    position: absolute;
+    text-align: left;
+    padding-left: .5em;
+}
+
+
+
 .circle{
     font-family: 'Anton', sans-serif;
     border: solid .5em white;
@@ -86,7 +96,7 @@ h3{
     align-content: flex-start;
 }
 .pic-text{
-    font-size: 30px;
+    font-size: 18px;
 
 }
 .pic-size{
@@ -116,4 +126,9 @@ h3{
     border-radius: 50%;
     font-size: 1em;
 
+}
+
+.last-box li{
+    list-style-type: none;
+    margin: 2em 0;
 }
