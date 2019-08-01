@@ -132,3 +132,26 @@ h3{
     list-style-type: none;
     margin: 2em 0;
 }
+.last-box{
+    text-align: left;
+}
+.twitter{
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+.twittertxt{
+    padding-top: 1em;
+}
+.fa-twitter{
+    color: #1da1f1;
+}
+@media screen and (max-width: 376px){
+    hr{
+        display: none;
+    }
+    .xshide{
+        display: none;
+
+
+    }
+}
