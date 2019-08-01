@@ -141,7 +141,7 @@ h3{
 .fa-twitter{
     color: #1da1f1;
 }
-@media screen and (max-width: 376px){
+@media screen and (max-width: 550px){
     hr{
         display: none;
     }
@@ -152,9 +152,11 @@ h3{
     }
 }
 
-@media screen and (min-width: 377px){
+@media screen and (min-width: 550px){
     main {
+
         display: grid;
+
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 70px 40% 40%;
         grid-template-areas:
@@ -169,6 +171,8 @@ h3{
 
     .pic1 {
         grid-area: pic1;
+        border-box: width: 342px;
+        padding: 1px;
     }
 
     .pic2 {
@@ -181,6 +185,10 @@ h3{
 
     .pic4 {
         grid-area: pic4;
+    }
+
+    .pic-footer{
+        width: 342px;
     }
 
     .pic-size {
@@ -219,4 +227,8 @@ h3{
         width: 60%;
         color: #e6e6e6;
     }
+}
+
+@media screen and (min-width: 900px){
+
 }
