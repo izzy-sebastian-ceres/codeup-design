@@ -17,11 +17,6 @@ body {
     left: calc(50% + (-52.5px));
     top: 26px;
 }
-
-nav{
-    grid-area: nav;
-
-}
 .nav-links{
     padding: 0;
 }
@@ -157,41 +152,71 @@ h3{
     }
 }
 
-@media screen and (min-width: 377px) {
-    main{
+@media screen and (min-width: 377px){
+    main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows:50px 40% 40%;
+        grid-template-rows: 70px 40% 40%;
         grid-template-areas:
-        "select select"
-        "pic1 pic2"
-        "pic3 pic4";
+                "select select"
+                "pic1 pic2"
+                "pic3 pic4";
     }
 
-    .select{
+    .select {
         grid-area: select;
     }
 
-    .pic1{
-          grid-area: pic1;
+    .pic1 {
+        grid-area: pic1;
     }
 
-    .pic2{
+    .pic2 {
         grid-area: pic2;
     }
 
-    .pic3{
+    .pic3 {
         grid-area: pic3;
     }
 
-    .pic4{
+    .pic4 {
         grid-area: pic4;
     }
+
     .pic-size {
-        max-height:218px ;
+        max-height: 218px;
         width: auto;
     }
 
+    .smhide {
+        display: none;
+    }
 
+    .smnav ul {
+        display: flex;
+        /*width: 80%;*/
+        align-content: center;
+        text-align: center;
+        margin-left: 20%;
+        margin-right: 20%;
 
+    }
+
+    .blog1 {
+        margin-left: auto;
+    }
+
+    .smul {
+        position: relative;
+        top: -10.5em;
+    }
+
+    .nav-links li {
+        padding: 0 .9em;
+
+    }
+    .hr{
+        width: 60%;
+        color: #e6e6e6;
+    }
 }
