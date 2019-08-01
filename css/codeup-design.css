@@ -161,7 +161,7 @@ h3{
     main{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows:50px 20% 20%;
+        grid-template-rows:50px 40% 40%;
         grid-template-areas:
         "select select"
         "pic1 pic2"
