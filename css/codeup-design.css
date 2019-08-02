@@ -249,6 +249,7 @@ h3{
         background-color: white;
         margin-top: 3em;
         display: flex;
+        margin-bottom: 3em;
 
     }
     .banner{
@@ -346,7 +347,9 @@ h3{
         font-size:28px;
     }
     .hr{
-        width: 75%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        width: 72%;
         color: #e6e6e6;
     }
 
