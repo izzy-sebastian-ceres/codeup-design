@@ -28,7 +28,6 @@ body {
 }
 .nav-links a {
     color: #000;
-
     text-decoration: none;
     padding: .5em;
 }
@@ -158,6 +157,9 @@ h3{
 /*SMALL MEDIA SCREENS*/
 @media screen and (min-width: 732px) and (max-width: 1088px){
 
+    .smhide {
+        display: none;
+    }
 
     main {
         display: grid;
@@ -176,8 +178,7 @@ h3{
 
     .pic1 {
         grid-area: pic1;
-        border-box: width 342px;
-        padding: 1px;
+
     }
 
     .pic2 {
@@ -201,18 +202,13 @@ h3{
         width: auto;
     }
 
-    .smhide {
-        display: none;
-    }
 
     .smnav ul {
         display: flex;
-        /*width: 80%;*/
         align-content: center;
         text-align: center;
         margin-left: 20%;
         margin-right: 20%;
-
     }
 
     .margin-left {
@@ -228,6 +224,7 @@ h3{
         padding: 0 .9em;
 
     }
+
     .hr{
         width: 60%;
         color: #e6e6e6;
@@ -350,7 +347,7 @@ h3{
     .hr{
         margin-top: 3em;
         margin-bottom: 3em;
-        width: 72%;
+        max-width: 1000px;
         color: #e6e6e6;
     }
 
