@@ -142,24 +142,24 @@ h3{
 .fa-twitter{
     color: #1da1f1;
 }
-@media screen and (min-width:0) and (max-width: 550px){
+
+/*EXTRA SMALL MEDIA SCREEN*/
+@media screen and (min-width:0) and (max-width: 731px){
     hr{
         display: none;
     }
     .xshide{
         display: none;
-
-
     }
 }
 
-@media screen and (min-width: 550px) and (max-width: 1019px){
+
+/*SMALL MEDIA SCREENS*/
+@media screen and (min-width: 732px) and (max-width: 1088px){
 
 
     main {
-
         display: grid;
-
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 70px 40% 40%;
         grid-template-areas:
@@ -170,6 +170,7 @@ h3{
 
     .select {
         grid-area: select;
+
     }
 
     .pic1 {
@@ -232,142 +233,70 @@ h3{
     }
 }
 
-@media screen and (min-width: 1020px) and (max-width:1119px ){
+
+
+/*LARGE MEDIA SCREENS*/
+@media screen and (min-width: 1089px){
+
 
     .mdhide{
         display: none;
     }
+
+    .mdnav{
+        height: 62px;
+        width: 100%;
+        background-color: white;
+        margin-top: 3em;
+        display: flex;
+
+    }
     .banner{
-        display: flex;
-    }
-    .logo{
-        position: absolute;
-        top:1.9em;
-        left: 1em;
-
-    }
-    .big-title{
-        grid-area: big-title;
-        position: absolute;
-        left: 2.5em;
-        margin-top:-.10em;
-
-    }
-    .nav-links{
-        margin-top: 1.5em;
-        display: flex;
-        margin-left: auto;
-        padding:0 1em;
-    }
-    main {
-
-        display: grid;
-
-        grid-template-columns: 1fr 1fr 3fr;
-        grid-template-rows: 70px 40% 40%;
-        grid-template-areas:
-                "select select the-last"
-                "pic1 pic2 last-box"
-                "pic3 pic4 last-box";
-    }
-
-    .select {
-        grid-area: select;
-    }
-
-    .pic1 {
-        grid-area: pic1;
-
-    }
-
-    .pic2 {
-        grid-area: pic2;
-    }
-
-    .pic3 {
-        grid-area: pic3;
-    }
-
-    .pic4 {
-        grid-area: pic4;
-    }
-
-    .the-last{
-        grid-area: the-last;
-    }
-
-    .last-box{
-        grid-area: last-box;
-        margin-top: -1.5em;
-    }
-
-    .pic-footer{
-        width: 314px;
-        margin-left: 1em;
-    }
-
-    .pic-size {
-        max-height: 200px;
-        width: auto;
-        margin-left: 1em;
-    }
-    .last-text{
-        font-size:28px;
-    }
-    .hr{
-        width: 90%;
-        color: #e6e6e6;
-    }
-
-}
-@media screen and (min-width: 1120px) {
-
-    body{
         max-width: 1120px;
-    }
-    .lgnav{
-        width: 100%;
-    }
-
-    .lghide {
-        display: none;
-    }
-    .banner{
-        display: flex;
+        margin: 0 auto;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "logo text text . . links";
     }
     .logo{
-        position: absolute;
-        top:1.9em;
-        left: 1em;
+        grid-area: logo;
+        position: relative;
+        top: -19px;
 
     }
     .big-title{
-        grid-area: big-title;
-        position: absolute;
-        left: 2.5em;
-        margin-top:-.10em;
+        grid-area: text;
+        position: relative;
+        top: -32px;
+        left: -35px;
 
     }
     .nav-links{
+        grid-area: links;
+        max-width: 1120px;
         margin-top: 1.5em;
         display: flex;
         margin-left: auto;
         padding:0 1em;
     }
     main {
-
+        max-width: 1120px;
+        margin: 0 auto;
         display: grid;
-
-        grid-template-columns: 1fr 1fr 3fr;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 70px 40% 40%;
         grid-template-areas:
-                "select select the-last"
+                "select . the-last"
                 "pic1 pic2 last-box"
                 "pic3 pic4 last-box";
     }
 
     .select {
         grid-area: select;
+        position: relative;
+        right: 90px;
     }
 
     .pic1 {
@@ -389,11 +318,18 @@ h3{
 
     .the-last{
         grid-area: the-last;
+        position: relative;
+        right: 115px;
     }
 
     .last-box{
         grid-area: last-box;
-        margin-top: -1.5em;
+        display: flex;
+        flex-direction: column;
+        margin-top: -25px;
+    }
+    .last-box ul{
+        margin-top: 0;
     }
 
     .pic-footer{
@@ -408,14 +344,11 @@ h3{
     }
     .last-text{
         font-size:28px;
-        padding-right: 1em;
-        margin-right: 2em;
     }
     .hr{
-        width: 90%;
+        width: 75%;
         color: #e6e6e6;
     }
-    .banner{
-        width: 100%;
-    }
+
 }
+
